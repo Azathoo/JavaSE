@@ -50,7 +50,9 @@ public class StringStudy {
         System.out.println("直接赋值的字符串："+name);
         System.out.println("有参构造："+haveParam);
         System.out.println("无参构造："+noParam);
-        System.out.println("通过byte类创建："+byASCII);
-        System.out.println("通过char类创建："+byChar);
+        System.out.println("通过 byte 类创建："+byASCII);
+        System.out.println("通过 char 类创建："+byChar);
     }
 }
+
+// git学习模拟hotfix分支修复bug
