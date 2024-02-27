@@ -52,7 +52,22 @@ public class StringStudy {
         System.out.println("无参构造："+noParam);
         System.out.println("通过 byte 类创建："+byASCII);
         System.out.println("通过 char 类创建："+byChar);
+
+        // 比较
+        Person p1 = new Person();
+        // 常量池中有了“归海”
+        p1.name = "归海";
+        Person p2 = new Person() ;
+        p2.name = "归海";
+        System.out.println(p1.name.equals(p2.name));//true/fales
+        System.out.println(p1.name == p2.name) ; //true/fales
+        System.out.println(p1.name == "归海") ; //true/fales
+
+        StringBuffer stringBuffer = new StringBuffer("zqh");
+        // stringBuffer 方法
+        stringBuffer.append("hln");
+        System.out.println(stringBuffer);
     }
 }
 
-// git学习模拟hotfix分支修复bug
+
